@@ -34,13 +34,13 @@ Set up a [mariadb](https://mariadb.org/) SQL server. It supports multiple databa
 
 Configuration variables:
 
-- **databases** (*Require*): Listen of databases.
-- **logins** (*Require*): Listen of logindata they will create or update.
+- **databases** (*Require*): List of databases.
+- **logins** (*Require*): List of logindata they will create or update.
   - **username** (*Require*): Username for login.
-  - **host** (*Require*): Host for login, if you need a login with multibe hosts, use '%'.
+  - **host** (*Require*): Host for login, if you need a login with multiple hosts, use '%'.
   - **password** (*Require*): Password for login.
-- **rights** (*Require*): Listen of rights to be handle.
-  - **username** (*Require*): Username for grant rights.
+- **rights** (*Require*): List of rights to be handle.
+  - **username** (*Require*): Username for granting rights.
   - **host** (*Require*): Host is a part of username like above.
   - **database** (*Require*): Database name to grant this user rights to.
   - **grant** (*Require*): SQL grant part for access too.
